@@ -6,7 +6,7 @@ ASP.NET Core MVC Application
 
   <img alt="Repository size" src="https://img.shields.io/github/repo-size/ThayPedroso/SalesWebMVC">
 
-  <a href="https://github.com/ThayPedroso/proffy/commits/master">
+  <a href="https://github.com/ThayPedroso/SalesWebMVC/commits/master">
     <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/ThayPedroso/SalesWebMVC">
   </a>
 
