@@ -62,6 +62,8 @@ As seguintes ferramentas foram usadas na construção do projeto:
 #### **Banco de dados**  ([MySQL](https://www.mysql.com/))
 
 -   Versão Community
+-   Seeding para criação de dados de teste caso banco de dados esteja vazio
+-   Utilização de migrations
 
 ## 💪 Como contribuir para o projeto
 
