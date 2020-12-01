@@ -1,5 +1,6 @@
 ﻿using SalesWebMVC.Models.Enums;
 using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace SalesWebMVC.Models
@@ -13,6 +14,8 @@ namespace SalesWebMVC.Models
         public double Amount { get; set; }
         public SalesStatus Status { get; set; }
         public Seller Seller { get; set; }
+
+        public int SellerId { get; set; }
 
         public SalesRecord() 
         {

@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
 using System.Threading.Tasks;
+using SalesWebMVC.Models.Enums;
 
 namespace SalesWebMVC.Services
 {
@@ -56,6 +57,15 @@ namespace SalesWebMVC.Services
                 .OrderByDescending(x => x.Date)
                 .GroupBy(x => x.Seller.Department)
                 .ToListAsync();
+        }
+
+        public async Task InsertAsync(SalesRecord obj)
+        {
+            DateTime currentTime = DateTime.Now;
+            obj.Date = new DateTime(currentTime.Year, currentTime.Month, currentTime.Day);
+            obj.Status = SalesStatus.Pending;
+            _context.Add(obj);
+            await _context.SaveChangesAsync();
         }
     }
 }
